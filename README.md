@@ -3,11 +3,10 @@
 
 ## Landing page Angular Material
 
-__instalación__
+__instalación__:
 
 ```
 npx ng add @angular/material
-
 ```
 
 ## Página web SPA en angular para peluquería masculina

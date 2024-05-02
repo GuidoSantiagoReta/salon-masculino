@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './nabvar.component.css'
 })
 export class NabvarComponent {
-
+  menuOpen = false;
+  links = [
+    { name: 'Servicios', link: '/servicios' },
+    { name: 'Turnos', link: '/turnos' },
+    { name: 'Contacto', link: '/contacto' }
+  ];
 }

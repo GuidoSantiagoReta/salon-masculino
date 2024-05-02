@@ -1,17 +1,24 @@
 <p>
-    <mat-toolbar class="navbar">
-      <h1>Tri Salón Masculino</h1>
-      <div class="links-container">
-        <ul>
-          <li><a routerLink="/servicios">Servicios</a></li>
-          <li><a routerLink="/turnos">Turnos</a></li>
-          <li><a routerLink="/contacto">Contacto</a></li>
-        </ul>
-      </div>
-      <button mat-icon-button class="example-icon menu-button" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span class="example-spacer"></span>
-    </mat-toolbar>
-  </p>
-  
+  <mat-toolbar class="navbar">
+    <h1>Tri Salón Masculino</h1>
+    <div class="links-container">
+      <ul>
+        <li><a routerLink="/servicios">Servicios</a></li>
+        <li><a routerLink="/turnos">Turnos</a></li>
+        <li><a routerLink="/contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <button mat-icon-button class="example-icon menu-button" aria-label="Example icon-button with menu icon" (click)="menuOpen =!menuOpen">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+</p>
+
+<!-- Menú hamburguesa -->
+<div *ngIf="menuOpen" class="hamburger-menu">
+  <ul>
+    <li *ngFor="let link of links"><a [routerLink]="link.link">{{ link.name }}</a></li>
+  </ul>
+</div>
+

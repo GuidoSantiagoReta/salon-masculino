@@ -47,16 +47,44 @@ h1{
 .menu-button {
   display: none; 
 }
+.hamburger-menu {
+  display: none;
+}
+
 
 /* Media Query para pantallas menores a 768px */
 @media (max-width: 768px) {
   .navbar li a {
-    display: none;
-    
-  }
- .menu-button {
-    display: block; 
-  }
+      display: none;
+      color: #fff;
+      text-decoration: none; 
+      padding: 10px 20px;
+   }
+  .menu-button {
+      display: block;
+   }
+  .hamburger-menu {
+      position: absolute;
+      background-color: black;
+      width: 100%;
+      height: 8vh;
 
-  
-}
+   }
+    
+  .hamburger-menu li a {
+      padding: 10px 20px;
+      color: white;
+      cursor: pointer;
+      list-style: none;
+      text-decoration: none; 
+   }
+    
+  .hamburger-menu li:hover {
+      background-color: #333;
+   }
+    
+  .hamburger-menu {
+      display: block; 
+   }
+ }
+ 

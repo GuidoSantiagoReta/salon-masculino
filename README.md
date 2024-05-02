@@ -3,7 +3,7 @@
 
 ## Landing page Angular Material
 
-__instalación_
+__instalación__
 
 ```
 npx ng add @angular/material

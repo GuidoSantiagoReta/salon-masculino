@@ -1,12 +1,12 @@
 .rectangle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 200px;
-    background-color: #2c2c2acb;
-    margin: auto;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 200px;
+  background-color: #2c2c2acb;
+  margin: auto;
+}
   
   .services-content {
     text-align: center;

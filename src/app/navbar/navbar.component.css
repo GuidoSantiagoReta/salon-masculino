@@ -1,90 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar{
-    background-color: black;
+.navbar {
+  background-color: black;
 }
 
-h1{
-    color: #fff;
+h1 {
+  color: #fff;
 }
 
-.links-container{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%; 
+.links-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .navbar li {
-    float: left;
-  }
-  
-  .navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 12px 14px;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .navbar li a:hover {
-    text-decoration: underline;
-    text-decoration-color: white; 
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-  /* Estilos por defecto para el menú hamburguesa */
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar li a:hover {
+  color: #ececec; 
+}
+
+
+/* Estilos por defecto para el menú hamburguesa */
 .menu-button {
-  display: none; 
+  display: none;
 }
 .hamburger-menu {
   display: none;
+}
+
+/* Estilos para el active (revisar)*/
+ .activebutton {
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  outline: 0;
+  background-color: #2c2c2acb;
+  border: 2px solid #cccccc3b; 
 }
 
 
 /* Media Query para pantallas menores a 768px */
 @media (max-width: 768px) {
   .navbar li a {
-      display: none;
-      color: #fff;
-      text-decoration: none; 
-      padding: 10px 20px;
-   }
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
   .menu-button {
-      display: block;
-   }
+    display: block;
+  }
   .hamburger-menu {
-      position: absolute;
-      background-color: black;
-      width: 100%;
-      height: 8vh;
+    
+    background-color: black;
+    width: 100%;
+    height: 8vh;
+  }
 
-   }
-    
   .hamburger-menu li a {
-      padding: 10px 20px;
-      color: white;
-      cursor: pointer;
-      list-style: none;
-      text-decoration: none; 
-   }
-    
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+  }
+
   .hamburger-menu li:hover {
-      background-color: #333;
-   }
-    
+    color: #333;
+  }
+
   .hamburger-menu {
-      display: block; 
-   }
- }
- 
+    display: block;
+  }
+
+  .activebutton-burger {
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    background-color: #2c2c2acb;
+    width: 100%;
+    height: 30px;
+  }
+}

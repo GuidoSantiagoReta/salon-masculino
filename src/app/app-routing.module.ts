@@ -6,11 +6,12 @@ import { ContactoComponent } from './contacto/contacto.component';
 const routes: Routes = [
   { path: 'servicios', component: ServiciosComponent },
   { path: 'turnos', component: TurnosComponent },
-  { path: 'contacto', component: ContactoComponent },  
+  { path: 'contacto', component: ContactoComponent },
+  
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

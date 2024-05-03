@@ -1,20 +1,32 @@
 .rectangle {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    width: 50%; 
-    height: 200px;
-    background-color: #2c2c2acb; 
-    margin: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 200px;
+  background-color: #2c2c2acb;
+  margin: auto;
+}
+
+.services-content {
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+
+.text-content {
+  font-size: 18px;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+
+  .services-content{
+    font-size: 20px;
+    overflow: hidden;
   }
-  
-  .services-content {
-    text-align: center; 
-    font-size: 25px;
-    color: #fff;
+  .text-content{
+    font-size: 15px;
   }
-  
-  .text-content {
-    font-size: 18px; 
-    color: white; 
-  }
+}

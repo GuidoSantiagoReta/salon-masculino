@@ -6,8 +6,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 const routes: Routes = [
   { path: 'servicios', component: ServiciosComponent },
   { path: 'turnos', component: TurnosComponent },
-  { path: 'contacto', component: ContactoComponent },
-  // Añade una ruta para la página de inicio o cualquier otra página que desees
+  { path: 'contacto', component: ContactoComponent },  
 ];
 
 @NgModule({

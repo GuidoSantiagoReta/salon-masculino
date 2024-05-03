@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-nabvar',
-  templateUrl: './nabvar.component.html',
-  styleUrl: './nabvar.component.css'
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css'
 })
-export class NabvarComponent {
+export class NavbarComponent {
   menuOpen = false;
   links = [
     { name: 'Servicios', link: '/servicios' },

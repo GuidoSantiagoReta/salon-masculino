@@ -1,0 +1,20 @@
+.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+    background-color: #2c2c2acb;
+    margin: auto;
+  }
+  
+  .services-content {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  .text-content {
+    font-size: 18px;
+    color: white;
+  }

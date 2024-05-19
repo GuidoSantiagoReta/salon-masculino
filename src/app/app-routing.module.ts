@@ -4,10 +4,10 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { TurnosComponent } from './turnos/turnos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 const routes: Routes = [
-  { path: 'servicios', component: ServiciosComponent },
+  { path: '', component: ServiciosComponent },
   { path: 'turnos', component: TurnosComponent },
   { path: 'contacto', component: ContactoComponent },
-  
+  {path: '**', redirectTo: '/', pathMatch:'full'}
 ];
 
 @NgModule({

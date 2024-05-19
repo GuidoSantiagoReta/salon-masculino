@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css',
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
   menuOpen = false;
@@ -12,10 +13,14 @@ export class NavbarComponent {
     { name: 'Turnos', link: '/turnos' },
     { name: 'Contacto', link: '/contacto' },
   ];
-  
-  constructor(private router: Router) {}
+
+  constructor(public router: Router) {}
 
   isCurrentRoute(link: string): boolean {
+    //console.log('Current URL:', this.router.url); depurar URL
+    if (link === '/servicios' && this.router.url === '/') {
+      return true;
+    }
     return this.router.url === link;
   }
 }
